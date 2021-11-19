@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="ucdlogo">
+    <file>UCDlogo.png</file>
+  </qresource>
+</RCC>

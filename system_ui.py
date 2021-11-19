@@ -57,8 +57,8 @@ class SystemUI():
             for i in range(1,5):
                 pwr = [True]*i + [False]*(4-i)
                 self.sys.get_set_power(True, [pwr]*4)
-                popup_status.config(text = f'Module: {i}')
-
+                #popup_status.config(text = f'Module: {i}')
+                popup_status.config(text = 'f')
                 time.sleep(1)
                 self.update_pwr_states()
 
@@ -120,7 +120,8 @@ class SystemUI():
 
 if __name__ == "__main__":
     sys = System()
-    app = SystemUI(sys)
-    with sys:
-        app.root.mainloop()
+    # app = SystemUI(sys)
+    app = SystemUI()
+    # with sys:
+    app.root.mainloop()
 

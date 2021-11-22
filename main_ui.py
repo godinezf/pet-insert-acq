@@ -103,7 +103,7 @@ class main(qtw.QMainWindow,Ui_MainWindow):
 
          # check system status
         sync_status = self.sync.get_status()
-        set_led(sync_tatus)
+        self.set_led(sync_status)
         #if sync_status:
          #   self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_GREEN_LED))
         #else:

@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="red">
+    <file>red-light-icon-8.png</file>
+  </qresource>
+  <qresource prefix="green">
+    <file>green-led-on-md.png</file>
+  </qresource>
+</RCC>

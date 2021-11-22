@@ -1,0 +1,13 @@
+2021-11-16 21:29:18,131:DEBUG:Hello1
+2021-11-16 21:44:47,064:DEBUG:Acquisition data archive: /Users/ucdavis/Public.
+2021-11-16 21:45:01,322:DEBUG:Acquisition data archive: /Users/ucdavis/OneDrive - King's College London.
+2021-11-19 08:56:32,070:DEBUG:Acquisition data archive: /Users/ucdavis/test.
+2021-11-19 09:45:26,253:DEBUG:Acquisition data archive: /Users/ucdavis/test.
+2021-11-22 10:04:19,819:DEBUG:Acquisition data archive: /home/fgodinez/PETinsert_code.
+2021-11-22 10:14:04,608:DEBUG:self.sync: <sync.Sync object at 0x7f93acc20d90>.
+2021-11-22 10:40:37,617:DEBUG:self.sync: <sync.Sync object at 0x7f65b9869d90>.
+2021-11-22 10:43:14,108:DEBUG:self.sync: <sync.Sync object at 0x7f8a2790bd00>.
+2021-11-22 10:43:54,797:DEBUG:self.sync: <sync.Sync object at 0x7f0a252a1d00>.
+2021-11-22 10:43:58,652:DEBUG:Acquisition data archive: /home/fgodinez/Desktop.
+2021-11-22 10:44:56,468:DEBUG:self.sync:.
+2021-11-22 10:45:04,478:DEBUG:Acquisition data archive: /home/fgodinez/PETinsert_code.

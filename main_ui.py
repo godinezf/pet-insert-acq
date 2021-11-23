@@ -95,25 +95,43 @@ class main(qtw.QMainWindow,Ui_MainWindow):
         #else:
          #  logger.debug('device off')
           # self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_RED_LED))
-    	
-    def get_status(self):
 
-         # check system status
-        sync_status = self.sync.get_status()
-        self.set_led(sync_status)
+
+    def get_status(self):
+        sync_status = self.sys.sync.get_status()
+        self.sync.status.config(bg = 'green' if sync_status else 'red')
 
         # Directly check the status of each backend
         be_status = self.sys.get_status()
         be_status = zip(self.backend, be_status)
-        for b,s in be_status:
-            logger.debug(f'{s}{b}')
-        
+        [b.status.config(bg = 'green' if s else 'red') for b,s in be_status]
+
         # Check the RX status for each port on each backend to infer the frontend state
         sys_rx = self.sys.get_rx_status()
         for be, be_rx in zip(self.backend, sys_rx):
             for fe, err in zip(be.frontend, be_rx):
-                 #fe.status.config(bg = 'red' if err else 'green')
-                logger.debug(f'{fe}{err}')
+                fe.status.config(bg = 'red' if err else 'green')
+
+    def enumerate(self):
+        sys_idx = self.sys.get_physical_idx()
+        for be, be_idx in zip(self.backend, sys_idx):
+            for indicator, phys_idx in zip(be.m_pow, be_idx):
+                indicator.config(text = str(phys_idx).rjust(2))
+
+    def get_current(self):
+        print(self.sys.get_current())
+
+    def get_temp(self):
+        print(self.sys.get_temp())
+
+
+    def get_power(self):
+        states_in = self.sys.get_power()
+        return states_in
+
+    def set_power(self):
+        states_out = self.sys.set_power(states_in)
+        return states_out
 
     def power_toggle_cb(self, turn_on = False):
 
@@ -126,56 +144,20 @@ class main(qtw.QMainWindow,Ui_MainWindow):
             [be.flush() for be in self.sys.backend]
 
             self.set_pwr_vars(new_pwr)
-            #popup_status.config(text = f'Module: {i}')
             time.sleep(1)
 
         self.get_power()
         self.get_status()
-
-    def get_power(self):
-        states_in = self.sys.get_power()
-        self.set_pwr_vars(states_in)
-        states_out = self.get_pwr_vars()
-
-        if states_out != states_in:
-            print("Error getting power states")
-
-        return states_out
-
-    def set_pwr_vars(self, states):
-        for be, be_state in zip(self.backend, states):
-            if be_state is None:
-                [var.set(False) for var in be.m_pow_var]
-            else:
-                [var.set(state) for var,state in zip(be.m_pow_var, be_state)]
-
-    def get_pwr_vars(self):
-        return [[var.get() for var in b.m_pow_var] for b in self.backend]
-
-    def set_power(self):
-        states_in = self.get_pwr_vars()
-        states_out = self.sys.set_power(states_in)
-
-        if states_out != states_in:
-            print("Error setting power states")
-
-        return states_out
-
-    def enumerate(self):
-        sys_idx = self.sys.get_physical_idx()
-        for be, be_idx in zip(self.backend, sys_idx):
-            for indicator, phys_idx in zip(be.m_pow, be_idx):
-                indicator.config(text = phys_idx)
-
-    def get_current(self):
-        print(self.sys.get_current())
-
 
     def bias_toggle_cb(self, turn_on = False):
         if turn_on:
             self.sys.set_bias(29.5)
         else:
             self.sys.set_bias(0.0)
+
+
+
+    
 
 if __name__=='__main__':
     sys = System()

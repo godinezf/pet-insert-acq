@@ -96,14 +96,12 @@ class main(qtw.QMainWindow,Ui_MainWindow):
          #  logger.debug('device off')
           # self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_RED_LED))
     	
-
     def get_status(self):
 
          # check system status
         sync_status = self.sync.get_status()
         self.set_led(sync_status)
 
-        
         # Directly check the status of each backend
         be_status = self.sys.get_status()
         be_status = zip(self.backend, be_status)
@@ -118,62 +116,68 @@ class main(qtw.QMainWindow,Ui_MainWindow):
                 logger.debug(f'{fe}{err}')
 
     def power_toggle_cb(self, turn_on = False):
-         if turn_on:
-             for i in range(1,5):
-                 pwr = [True]*i + [False]*(4-i)
-                 self.sys.get_set_power(True, [pwr]*4)
-                 #popup_status.config(text = f'Module: {i}')
-                 #popup_status.config(text = 'f')
-                 time.sleep(1)
-                 self.update_pwr_states()
-         else:
-             self.sys.get_set_power(True, [[False]*4]*4)
 
-         self.update_pwr_states()
-         self.get_status()
+        pwr = self.get_power()
+        n = 4
+
+        for i in range(n):
+            for elem in pwr: elem[i] = turn_on
+            new_pwr = self.sys.set_power(pwr)
+            [be.flush() for be in self.sys.backend]
+
+            self.set_pwr_vars(new_pwr)
+            #popup_status.config(text = f'Module: {i}')
+            time.sleep(1)
+
+        self.get_power()
+        self.get_status()
+
+    def get_power(self):
+        states_in = self.sys.get_power()
+        self.set_pwr_vars(states_in)
+        states_out = self.get_pwr_vars()
+
+        if states_out != states_in:
+            print("Error getting power states")
+
+        return states_out
+
+    def set_pwr_vars(self, states):
+        for be, be_state in zip(self.backend, states):
+            if be_state is None:
+                [var.set(False) for var in be.m_pow_var]
+            else:
+                [var.set(state) for var,state in zip(be.m_pow_var, be_state)]
+
+    def get_pwr_vars(self):
+        return [[var.get() for var in b.m_pow_var] for b in self.backend]
+
+    def set_power(self):
+        states_in = self.get_pwr_vars()
+        states_out = self.sys.set_power(states_in)
+
+        if states_out != states_in:
+            print("Error setting power states")
+
+        return states_out
+
+    def enumerate(self):
+        sys_idx = self.sys.get_physical_idx()
+        for be, be_idx in zip(self.backend, sys_idx):
+            for indicator, phys_idx in zip(be.m_pow, be_idx):
+                indicator.config(text = phys_idx)
+
+    def get_current(self):
+        print(self.sys.get_current())
 
 
-    def get_set_power(self, update = False):
-        states = []
-        for b in self.backend:
-            states.append([v.get() for v in b.m_pow_var])
-        states = self.sys.get_set_power(update, states)
-        print(states)
-        return states
-
-    def update_pwr_states(self):
-        pwr_states = self.get_set_power()
-        for b,s_all in zip(self.backend, pwr_states):
-            [v.set(s) for v,s in zip(b.m_pow_var, s_all)]
-
-    # def enumerate(self):
-    #     sys_idx = self.sys.get_physical_idx()
-    #     for be, be_idx in zip(self.backend, sys_idx):
-    #         for indicator, phys_idx in zip(be.m_pow, be_idx):
-    #             indicator.config(text = phys_idx)
-
-    # def get_current(self):
-    #     print(self.sys.get_current())
-
-    
-
-    # def bias_toggle_cb(self, turn_on = False):
-    #     if turn_on:
-    #         vals = np.linspace(0.0, 29.5, 5)
-    #         for v in vals:
-    #             self.sys.set_bias(v)
-    #             time.sleep(1)
-
-
-    #     else:
-    #         self.sys.set_bias(0.0)
-
-
+    def bias_toggle_cb(self, turn_on = False):
+        if turn_on:
+            self.sys.set_bias(29.5)
+        else:
+            self.sys.set_bias(0.0)
 
 if __name__=='__main__':
-    
-
-
     sys = System()
     app = qtw.QApplication([])
     mainWindow = main(sys)

@@ -47,7 +47,7 @@ class main(qtw.QMainWindow,Ui_MainWindow):
 
         self.pushButton_ResetBackend.clicked.connect(self.get_status)
         self.pushButton_directory.clicked.connect(self.choose_directory)
-        self.pushButton_powerUp.clicked.connect(self.power_toggle_cb)
+        self.pushButton_powerUp.clicked.connect(self.power_on_off)
         self.pushButton_startAquisition.clicked.connect(self.startAcquire)
         
         # self.pushButton_bias.clicked.connect(self.bias_toggle_cb)
@@ -106,13 +106,15 @@ class main(qtw.QMainWindow,Ui_MainWindow):
         be_status = self.sys.get_status()
         be_status = zip(self.backend, be_status)
         [print(f'{s}{b}') for b,s in be_status]
-        [self.set_led(s) for b,s in be_status]
+        
+        for b,s in be_status:
+            logger.debug(f'{s}{b}')
         
         # Check the RX status for each port on each backend to infer the frontend state
-        sys_rx = self.sys.get_rx_status()
-        for be, be_rx in zip(self.backend, sys_rx):
-            for fe, err in zip(be.frontend, be_rx):
-                fe.status.config(bg = 'red' if err else 'green')
+        #sys_rx = self.sys.get_rx_status()
+        #for be, be_rx in zip(self.backend, sys_rx):
+         #   for fe, err in zip(be.frontend, be_rx):
+          #      fe.status.config(bg = 'red' if err else 'green')
 
     def enumerate(self):
         sys_idx = self.sys.get_physical_idx()
@@ -142,14 +144,28 @@ class main(qtw.QMainWindow,Ui_MainWindow):
 
         for i in range(n):
             for elem in pwr: elem[i] = turn_on
+            print(pwr)
             new_pwr = self.sys.set_power(pwr)
             [be.flush() for be in self.sys.backend]
 
-            self.set_pwr_vars(new_pwr)
+            logger.debug(new_pwr)
             time.sleep(1)
 
         self.get_power()
         self.get_status()
+
+    def power_on_off(self):
+        pwr = self.get_power()
+        print(pwr[1][1])
+        # the power is on condition
+        if pwr[1][1]:
+           self.power_toggle_cb(False) #<--- turn power off
+           logger.debug('power is on')
+        
+        # the power is off condition
+        else:
+           self.power_toggle_cb(True) #<--- turn power on
+       	   logger.debug('power is on')
 
     def bias_toggle_cb(self, turn_on = False):
         if turn_on:

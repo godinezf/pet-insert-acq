@@ -11,3 +11,135 @@
 2021-11-22 10:43:58,652:DEBUG:Acquisition data archive: /home/fgodinez/Desktop.
 2021-11-22 10:44:56,468:DEBUG:self.sync:.
 2021-11-22 10:45:04,478:DEBUG:Acquisition data archive: /home/fgodinez/PETinsert_code.
+2021-11-22 12:28:29,258:DEBUG:device on
+2021-11-22 12:30:24,580:DEBUG:device on
+2021-11-22 12:30:27,448:DEBUG:device on
+2021-11-22 12:30:31,608:DEBUG:device on
+2021-11-22 12:32:36,265:DEBUG:LED set to: device on
+2021-11-22 12:32:39,553:DEBUG:LED set to: device on
+2021-11-22 12:32:45,004:DEBUG:LED set to: device on
+2021-11-22 12:34:20,067:DEBUG:LED set to: device on
+2021-11-22 12:38:26,050:DEBUG:LED set to: device on
+2021-11-22 12:38:30,383:DEBUG:LED set to: device on
+2021-11-22 12:38:31,767:DEBUG:LED set to: device on
+2021-11-22 12:46:11,322:DEBUG:LED set to: device on
+2021-11-22 12:46:11,367:DEBUG:<generator object main.get_status.<locals>.<genexpr> at 0x7f336d335dd0>
+2021-11-22 12:46:25,256:DEBUG:LED set to: device on
+2021-11-22 12:46:25,300:DEBUG:<generator object main.get_status.<locals>.<genexpr> at 0x7f336d335dd0>
+2021-11-22 12:50:51,396:DEBUG:LED set to: device on
+2021-11-22 12:50:53,837:DEBUG:LED set to: device on
+2021-11-22 12:51:48,469:DEBUG:LED set to: device on
+2021-11-22 12:51:50,753:DEBUG:LED set to: device on
+2021-11-22 12:51:52,562:DEBUG:LED set to: device on
+2021-11-22 12:52:28,495:DEBUG:LED set to: device on
+2021-11-22 12:52:31,211:DEBUG:LED set to: device on
+2021-11-22 12:52:32,475:DEBUG:LED set to: device on
+2021-11-22 12:52:35,370:DEBUG:LED set to: device on
+2021-11-22 12:52:36,677:DEBUG:LED set to: device on
+2021-11-22 12:52:39,338:DEBUG:LED set to: device on
+2021-11-22 12:52:41,946:DEBUG:LED set to: device on
+2021-11-22 12:54:18,287:DEBUG:LED set to: device on
+2021-11-22 12:54:18,333:DEBUG:True
+2021-11-22 12:54:18,334:DEBUG:True
+2021-11-22 12:54:18,335:DEBUG:True
+2021-11-22 12:54:18,335:DEBUG:True
+2021-11-22 12:56:35,466:DEBUG:LED set to: device on
+2021-11-22 12:56:35,510:DEBUG:True<backend.Backend object at 0x7feb58ee08b0>
+2021-11-22 12:56:35,510:DEBUG:True<backend.Backend object at 0x7feb58ee08e0>
+2021-11-22 12:56:35,511:DEBUG:True<backend.Backend object at 0x7feb58ee0eb0>
+2021-11-22 12:56:35,512:DEBUG:True<backend.Backend object at 0x7feb58ee7610>
+2021-11-22 12:56:35,513:DEBUG:True<backend.Backend object at 0x7feb58ee08b0>
+2021-11-22 12:56:35,513:DEBUG:True<backend.Backend object at 0x7feb58ee08e0>
+2021-11-22 12:56:35,515:DEBUG:True<backend.Backend object at 0x7feb58ee0eb0>
+2021-11-22 12:56:35,515:DEBUG:True<backend.Backend object at 0x7feb58ee7610>
+2021-11-22 12:56:35,515:DEBUG:True<backend.Backend object at 0x7feb58ee08b0>
+2021-11-22 12:56:35,515:DEBUG:True<backend.Backend object at 0x7feb58ee08e0>
+2021-11-22 12:56:35,515:DEBUG:True<backend.Backend object at 0x7feb58ee0eb0>
+2021-11-22 12:56:35,516:DEBUG:True<backend.Backend object at 0x7feb58ee7610>
+2021-11-22 12:56:35,516:DEBUG:True<backend.Backend object at 0x7feb58ee08b0>
+2021-11-22 12:56:35,516:DEBUG:True<backend.Backend object at 0x7feb58ee08e0>
+2021-11-22 12:56:35,516:DEBUG:True<backend.Backend object at 0x7feb58ee0eb0>
+2021-11-22 12:56:35,516:DEBUG:True<backend.Backend object at 0x7feb58ee7610>
+2021-11-22 12:58:32,673:DEBUG:LED set to: device on
+2021-11-22 13:00:24,201:DEBUG:LED set to: device on
+2021-11-22 13:00:34,811:DEBUG:LED set to: device on
+2021-11-22 13:03:45,113:DEBUG:LED set to: device on
+2021-11-22 13:03:45,160:DEBUG:True
+2021-11-22 13:03:45,161:DEBUG:True
+2021-11-22 13:03:45,161:DEBUG:True
+2021-11-22 13:03:45,162:DEBUG:True
+2021-11-22 13:04:20,368:DEBUG:LED set to: device on
+2021-11-22 13:04:20,412:DEBUG:<backend.Backend object at 0x7f6c734007f0>
+2021-11-22 13:04:20,413:DEBUG:<backend.Backend object at 0x7f6c73400820>
+2021-11-22 13:04:20,413:DEBUG:<backend.Backend object at 0x7f6c73400df0>
+2021-11-22 13:04:20,414:DEBUG:<backend.Backend object at 0x7f6c73407550>
+2021-11-22 13:05:52,094:DEBUG:LED set to: device on
+2021-11-22 13:05:52,137:DEBUG:True<backend.Backend object at 0x7f4be3017850>
+2021-11-22 13:05:52,137:DEBUG:True<backend.Backend object at 0x7f4be3017880>
+2021-11-22 13:05:52,137:DEBUG:True<backend.Backend object at 0x7f4be3017e50>
+2021-11-22 13:05:52,137:DEBUG:True<backend.Backend object at 0x7f4be301e5b0>
+2021-11-22 13:11:27,275:DEBUG:LED set to: device on
+2021-11-22 13:11:27,319:DEBUG:True<backend.Backend object at 0x7fd0b0b52cd0>
+2021-11-22 13:11:27,320:DEBUG:True<backend.Backend object at 0x7fd0b0b52d00>
+2021-11-22 13:11:27,320:DEBUG:True<backend.Backend object at 0x7fd0b0b61310>
+2021-11-22 13:11:27,321:DEBUG:True<backend.Backend object at 0x7fd0b0b61a30>
+2021-11-22 13:11:27,364:DEBUG:<frontend.Frontend object at 0x7fd0b0b612e0>True
+2021-11-22 13:11:27,365:DEBUG:<frontend.Frontend object at 0x7fd0b0b61370>True
+2021-11-22 13:11:27,367:DEBUG:<frontend.Frontend object at 0x7fd0b0b613d0>True
+2021-11-22 13:11:27,368:DEBUG:<frontend.Frontend object at 0x7fd0b0b61430>True
+2021-11-22 13:11:27,368:DEBUG:<frontend.Frontend object at 0x7fd0b0b61a00>True
+2021-11-22 13:11:27,369:DEBUG:<frontend.Frontend object at 0x7fd0b0b61a90>True
+2021-11-22 13:11:27,369:DEBUG:<frontend.Frontend object at 0x7fd0b0b61af0>True
+2021-11-22 13:11:27,370:DEBUG:<frontend.Frontend object at 0x7fd0b0b61b50>True
+2021-11-22 13:11:27,370:DEBUG:<frontend.Frontend object at 0x7fd0b0b63160>True
+2021-11-22 13:11:27,371:DEBUG:<frontend.Frontend object at 0x7fd0b0b631f0>True
+2021-11-22 13:11:27,372:DEBUG:<frontend.Frontend object at 0x7fd0b0b63250>True
+2021-11-22 13:11:27,372:DEBUG:<frontend.Frontend object at 0x7fd0b0b632b0>True
+2021-11-22 13:11:27,373:DEBUG:<frontend.Frontend object at 0x7fd0b0b63880>True
+2021-11-22 13:11:27,373:DEBUG:<frontend.Frontend object at 0x7fd0b0b63910>True
+2021-11-22 13:11:27,374:DEBUG:<frontend.Frontend object at 0x7fd0b0b63970>True
+2021-11-22 13:11:27,374:DEBUG:<frontend.Frontend object at 0x7fd0b0b639d0>True
+2021-11-22 13:14:35,780:DEBUG:LED set to: device on
+2021-11-22 13:14:35,824:DEBUG:True<backend.Backend object at 0x7f746fce7e80>
+2021-11-22 13:14:35,825:DEBUG:True<backend.Backend object at 0x7f746fce7eb0>
+2021-11-22 13:14:35,825:DEBUG:True<backend.Backend object at 0x7f746fcf74c0>
+2021-11-22 13:14:35,826:DEBUG:True<backend.Backend object at 0x7f746fcf7be0>
+2021-11-22 13:14:35,869:DEBUG:<frontend.Frontend object at 0x7f746fcf7490>True
+2021-11-22 13:14:35,870:DEBUG:<frontend.Frontend object at 0x7f746fcf7520>True
+2021-11-22 13:14:35,872:DEBUG:<frontend.Frontend object at 0x7f746fcf7580>True
+2021-11-22 13:14:35,873:DEBUG:<frontend.Frontend object at 0x7f746fcf75e0>True
+2021-11-22 13:14:35,873:DEBUG:<frontend.Frontend object at 0x7f746fcf7bb0>True
+2021-11-22 13:14:35,874:DEBUG:<frontend.Frontend object at 0x7f746fcf7c40>True
+2021-11-22 13:14:35,874:DEBUG:<frontend.Frontend object at 0x7f746fcf7ca0>True
+2021-11-22 13:14:35,875:DEBUG:<frontend.Frontend object at 0x7f746fcf7d00>True
+2021-11-22 13:14:35,875:DEBUG:<frontend.Frontend object at 0x7f746fcf9310>True
+2021-11-22 13:14:35,876:DEBUG:<frontend.Frontend object at 0x7f746fcf93a0>True
+2021-11-22 13:14:35,876:DEBUG:<frontend.Frontend object at 0x7f746fcf9400>True
+2021-11-22 13:14:35,877:DEBUG:<frontend.Frontend object at 0x7f746fcf9460>True
+2021-11-22 13:14:35,877:DEBUG:<frontend.Frontend object at 0x7f746fcf9a30>True
+2021-11-22 13:14:35,878:DEBUG:<frontend.Frontend object at 0x7f746fcf9ac0>True
+2021-11-22 13:14:35,879:DEBUG:<frontend.Frontend object at 0x7f746fcf9b20>True
+2021-11-22 13:14:35,879:DEBUG:<frontend.Frontend object at 0x7f746fcf9b80>True
+2021-11-22 13:16:34,811:DEBUG:LED set to: device on
+2021-11-22 13:16:34,855:DEBUG:True<backend.Backend object at 0x7f78e75f0e80>
+2021-11-22 13:16:34,855:DEBUG:True<backend.Backend object at 0x7f78e75f0eb0>
+2021-11-22 13:16:34,856:DEBUG:True<backend.Backend object at 0x7f78e76004c0>
+2021-11-22 13:16:34,856:DEBUG:True<backend.Backend object at 0x7f78e7600be0>
+2021-11-22 13:16:34,902:DEBUG:<frontend.Frontend object at 0x7f78e7600490>True
+2021-11-22 13:16:34,903:DEBUG:<frontend.Frontend object at 0x7f78e7600520>True
+2021-11-22 13:16:34,905:DEBUG:<frontend.Frontend object at 0x7f78e7600580>True
+2021-11-22 13:16:34,906:DEBUG:<frontend.Frontend object at 0x7f78e76005e0>True
+2021-11-22 13:16:34,906:DEBUG:<frontend.Frontend object at 0x7f78e7600bb0>True
+2021-11-22 13:16:34,907:DEBUG:<frontend.Frontend object at 0x7f78e7600c40>True
+2021-11-22 13:16:34,908:DEBUG:<frontend.Frontend object at 0x7f78e7600ca0>True
+2021-11-22 13:16:34,908:DEBUG:<frontend.Frontend object at 0x7f78e7600d00>True
+2021-11-22 13:16:34,909:DEBUG:<frontend.Frontend object at 0x7f78e7602310>True
+2021-11-22 13:16:34,909:DEBUG:<frontend.Frontend object at 0x7f78e76023a0>True
+2021-11-22 13:16:34,910:DEBUG:<frontend.Frontend object at 0x7f78e7602400>True
+2021-11-22 13:16:34,910:DEBUG:<frontend.Frontend object at 0x7f78e7602460>True
+2021-11-22 13:16:34,911:DEBUG:<frontend.Frontend object at 0x7f78e7602a30>True
+2021-11-22 13:16:34,912:DEBUG:<frontend.Frontend object at 0x7f78e7602ac0>True
+2021-11-22 13:16:34,912:DEBUG:<frontend.Frontend object at 0x7f78e7602b20>True
+2021-11-22 13:16:34,913:DEBUG:<frontend.Frontend object at 0x7f78e7602b80>True
+2021-11-22 13:17:09,610:DEBUG:ACQUISITION STARTED
+2021-11-22 13:17:51,097:INFO:ACQUISITION STARTED

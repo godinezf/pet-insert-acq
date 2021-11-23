@@ -47,8 +47,8 @@ class main(qtw.QMainWindow,Ui_MainWindow):
 
         self.pushButton_ResetBackend.clicked.connect(self.get_status)
         self.pushButton_directory.clicked.connect(self.choose_directory)
-        # self.pushButton_powerUp.clicked.connect(self.power_toggle_cb)
-        # self.pushButton_startAquisition.clicked.connect(self.startAcquire)
+        self.pushButton_powerUp.clicked.connect(self.power_toggle_cb)
+        self.pushButton_startAquisition.clicked.connect(self.startAcquire)
         
         # self.pushButton_bias.clicked.connect(self.bias_toggle_cb)
         # self.pushButton_powerStatus.clicked.connect(self.get_set_power)
@@ -82,76 +82,69 @@ class main(qtw.QMainWindow,Ui_MainWindow):
         directory = self.lineEdit_directory.text()
         logger.debug(f"Acquisition data archive: {directory}.")
     
-    # def startAcquire(self):
-    #     print('acquisition started')
+    def startAcquire(self):
+        logger.info('ACQUISITION STARTED')
 
     def set_led(self,stateIn):
     	# this method is used to change the color of an indicator LED
     	ICON_RED_LED = ":/red/red-light-icon-8.png"
     	ICON_GREEN_LED = ":/green/green-led-on-md.png"
     	if stateIn:
-           logger.debug('device on')
+           logger.debug('LED set to: device on')
            self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_GREEN_LED))
-        else:
-           logger.debug('device off')
-           self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_RED_LED))
+        #else:
+         #  logger.debug('device off')
+          # self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_RED_LED))
     	
 
     def get_status(self):
-        #ICON_RED_LED = ":/red/red-light-icon-8.png"
-        #ICON_GREEN_LED = ":/green/green-led-on-md.png"
 
          # check system status
         sync_status = self.sync.get_status()
         self.set_led(sync_status)
-        #if sync_status:
-         #   self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_GREEN_LED))
-        #else:
-         #   self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_RED_LED))
 
         
         # Directly check the status of each backend
         be_status = self.sys.get_status()
         be_status = zip(self.backend, be_status)
-        #[b.status.config(bg = 'green' if s else 'red') for b,s in be_status]
-        [print(f'{s}{b}') for b,s in be_status]
-        [set_led(s) for b,s in be_status]
-         # self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_GREEN_LED))
+        for b,s in be_status:
+            logger.debug(f'{s}{b}')
+        
+        # Check the RX status for each port on each backend to infer the frontend state
+        sys_rx = self.sys.get_rx_status()
+        for be, be_rx in zip(self.backend, sys_rx):
+            for fe, err in zip(be.frontend, be_rx):
+                 #fe.status.config(bg = 'red' if err else 'green')
+                logger.debug(f'{fe}{err}')
 
-         # # Check the RX status for each port on each backend to infer the frontend state
-         # sys_rx = self.sys.get_rx_status()
-         # for be, be_rx in zip(self.backend, sys_rx):
-         #     for fe, err in zip(be.frontend, be_rx):
-         #         fe.status.config(bg = 'red' if err else 'green')
+    def power_toggle_cb(self, turn_on = False):
+         if turn_on:
+             for i in range(1,5):
+                 pwr = [True]*i + [False]*(4-i)
+                 self.sys.get_set_power(True, [pwr]*4)
+                 #popup_status.config(text = f'Module: {i}')
+                 #popup_status.config(text = 'f')
+                 time.sleep(1)
+                 self.update_pwr_states()
+         else:
+             self.sys.get_set_power(True, [[False]*4]*4)
 
-    # def power_toggle_cb(self, turn_on = False):
-    #     if turn_on:
-    #         for i in range(1,5):
-    #             pwr = [True]*i + [False]*(4-i)
-    #             self.sys.get_set_power(True, [pwr]*4)
-    #             #popup_status.config(text = f'Module: {i}')
-    #             popup_status.config(text = 'f')
-    #             time.sleep(1)
-    #             self.update_pwr_states()
-    #     else:
-    #         self.sys.get_set_power(True, [[False]*4]*4)
-
-    #     self.update_pwr_states()
-    #     self.get_status()
+         self.update_pwr_states()
+         self.get_status()
 
 
-    # def get_set_power(self, update = False):
-    #     states = []
-    #     for b in self.backend:
-    #         states.append([v.get() for v in b.m_pow_var])
-    #     states = self.sys.get_set_power(update, states)
-    #     print(states)
-    #     return states
+    def get_set_power(self, update = False):
+        states = []
+        for b in self.backend:
+            states.append([v.get() for v in b.m_pow_var])
+        states = self.sys.get_set_power(update, states)
+        print(states)
+        return states
 
-    # def update_pwr_states(self):
-    #     pwr_states = self.get_set_power()
-    #     for b,s_all in zip(self.backend, pwr_states):
-    #         [v.set(s) for v,s in zip(b.m_pow_var, s_all)]
+    def update_pwr_states(self):
+        pwr_states = self.get_set_power()
+        for b,s_all in zip(self.backend, pwr_states):
+            [v.set(s) for v,s in zip(b.m_pow_var, s_all)]
 
     # def enumerate(self):
     #     sys_idx = self.sys.get_physical_idx()

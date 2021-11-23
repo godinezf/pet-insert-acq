@@ -28,7 +28,7 @@ class SystemUI():
         sys_idx = self.sys.get_physical_idx()
         for be, be_idx in zip(self.backend, sys_idx):
             for indicator, phys_idx in zip(be.m_pow, be_idx):
-                indicator.config(text = phys_idx)
+                indicator.config(text = str(phys_idx).rjust(2))
 
     def get_current(self):
         print(self.sys.get_current())
@@ -72,7 +72,6 @@ class SystemUI():
         popup_status = tk.Label(popup, text = 'Module: 0')
         popup_status.pack(pady = 20, padx = 20)
 
-<<<<<<< HEAD
         pwr = self.get_power()
         n = 4
 
@@ -80,15 +79,6 @@ class SystemUI():
             for elem in pwr: elem[i] = turn_on
             new_pwr = self.sys.set_power(pwr)
             [be.flush() for be in self.sys.backend]
-=======
-            for i in range(1,5):
-                pwr = [True]*i + [False]*(4-i)
-                self.sys.get_set_power(True, [pwr]*4)
-                #popup_status.config(text = f'Module: {i}')
-                popup_status.config(text = 'f')
-                time.sleep(1)
-                self.update_pwr_states()
->>>>>>> 2cbaa03a8adca7b04f61e221610fc874da234df9
 
             self.set_pwr_vars(new_pwr)
             popup_status.config(text = f'Module: {i}')
@@ -138,8 +128,7 @@ class SystemUI():
 
 if __name__ == "__main__":
     sys = System()
-    # app = SystemUI(sys)
-    app = SystemUI()
-    # with sys:
-    app.root.mainloop()
+    app = SystemUI(sys)
+    with sys:
+        app.root.mainloop()
 

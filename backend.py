@@ -139,3 +139,4 @@ class Backend():
     def get_current(self):
         resp = [self.exec(cmd.get_current(m)) for m in range(4)]
         return [-1 if resp is None else cmd.payload(m) for m in resp]
+

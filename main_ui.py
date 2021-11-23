@@ -99,13 +99,15 @@ class main(qtw.QMainWindow,Ui_MainWindow):
 
     def get_status(self):
         sync_status = self.sys.sync.get_status()
-        self.sync.status.config(bg = 'green' if sync_status else 'red')
+        #sync_status = self.sync.get_status()
+        self.set_led(sync_status)
 
         # Directly check the status of each backend
         be_status = self.sys.get_status()
         be_status = zip(self.backend, be_status)
-        [b.status.config(bg = 'green' if s else 'red') for b,s in be_status]
-
+        [print(f'{s}{b}') for b,s in be_status]
+        [self.set_led(s) for b,s in be_status]
+        
         # Check the RX status for each port on each backend to infer the frontend state
         sys_rx = self.sys.get_rx_status()
         for be, be_rx in zip(self.backend, sys_rx):

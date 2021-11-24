@@ -92,21 +92,21 @@ class main(qtw.QMainWindow,Ui_MainWindow):
     	if stateIn:
            logger.debug('LED set to: device on')
            self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_GREEN_LED))
-        #else:
-         #  logger.debug('device off')
-          # self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_RED_LED))
+        
+    	else:
+           logger.debug('LED set to: device off')
+           self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_RED_LED))
 
 
     def get_status(self):
         sync_status = self.sys.sync.get_status()
-        #sync_status = self.sync.get_status()
-        self.set_led(sync_status)
+        
+        self.set_led(sync_status)#Need new LED for system status
 
         # Directly check the status of each backend
         be_status = self.sys.get_status()
         be_status = zip(self.backend, be_status)
-        [print(f'{s}{b}') for b,s in be_status]
-        
+                
         for b,s in be_status:
             logger.debug(f'{s}{b}')
         
@@ -144,7 +144,6 @@ class main(qtw.QMainWindow,Ui_MainWindow):
 
         for i in range(n):
             for elem in pwr: elem[i] = turn_on
-            print(pwr)
             new_pwr = self.sys.set_power(pwr)
             [be.flush() for be in self.sys.backend]
 
@@ -156,16 +155,17 @@ class main(qtw.QMainWindow,Ui_MainWindow):
 
     def power_on_off(self):
         pwr = self.get_power()
-        print(pwr[1][1])
-        # the power is on condition
+        # the power was on condition
         if pwr[1][1]:
            self.power_toggle_cb(False) #<--- turn power off
-           logger.debug('power is on')
+           self.set_led(False)
+           logger.debug('power is tuned off')
         
-        # the power is off condition
+        # the power was off condition
         else:
            self.power_toggle_cb(True) #<--- turn power on
-       	   logger.debug('power is on')
+           self.set_led(True)
+       	   logger.debug('power is turned on')
 
     def bias_toggle_cb(self, turn_on = False):
         if turn_on:

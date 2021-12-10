@@ -47,7 +47,7 @@ class main(qtw.QMainWindow,Ui_MainWindow):
 
         self.pushButton_ResetBackend.clicked.connect(self.get_status)
         self.pushButton_directory.clicked.connect(self.choose_directory)
-        self.pushButton_powerUp.clicked.connect(self.power_toggle_cb)
+        self.pushButton_powerUp.clicked.connect(self.power_toggle_cb(True))
         self.pushButton_startAquisition.clicked.connect(self.startAcquire)
         
         # self.pushButton_bias.clicked.connect(self.bias_toggle_cb)
@@ -138,6 +138,7 @@ class main(qtw.QMainWindow,Ui_MainWindow):
     def power_toggle_cb(self, turn_on = False):
 
         pwr = self.get_power()
+
         n = 4
 
         for i in range(n):

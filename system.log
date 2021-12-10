@@ -143,3 +143,219 @@
 2021-11-22 13:16:34,913:DEBUG:<frontend.Frontend object at 0x7f78e7602b80>True
 2021-11-22 13:17:09,610:DEBUG:ACQUISITION STARTED
 2021-11-22 13:17:51,097:INFO:ACQUISITION STARTED
+2021-11-23 12:47:47,603:DEBUG:LED set to: device on
+2021-11-23 12:47:47,649:DEBUG:True<backend.Backend object at 0x7f3299a596a0>
+2021-11-23 12:47:47,650:DEBUG:True<backend.Backend object at 0x7f3299a596d0>
+2021-11-23 12:47:47,651:DEBUG:True<backend.Backend object at 0x7f3299a59ca0>
+2021-11-23 12:47:47,651:DEBUG:True<backend.Backend object at 0x7f3299a5d400>
+2021-11-23 12:47:47,695:DEBUG:<frontend.Frontend object at 0x7f3299a59c70>True
+2021-11-23 12:47:47,696:DEBUG:<frontend.Frontend object at 0x7f3299a59d00>True
+2021-11-23 12:47:47,699:DEBUG:<frontend.Frontend object at 0x7f3299a59d60>True
+2021-11-23 12:47:47,700:DEBUG:<frontend.Frontend object at 0x7f3299a59dc0>True
+2021-11-23 12:47:47,700:DEBUG:<frontend.Frontend object at 0x7f3299a5d3d0>True
+2021-11-23 12:47:47,701:DEBUG:<frontend.Frontend object at 0x7f3299a5d460>True
+2021-11-23 12:47:47,701:DEBUG:<frontend.Frontend object at 0x7f3299a5d4c0>True
+2021-11-23 12:47:47,702:DEBUG:<frontend.Frontend object at 0x7f3299a5d520>True
+2021-11-23 12:47:47,702:DEBUG:<frontend.Frontend object at 0x7f3299a5daf0>True
+2021-11-23 12:47:47,703:DEBUG:<frontend.Frontend object at 0x7f3299a5db80>True
+2021-11-23 12:47:47,704:DEBUG:<frontend.Frontend object at 0x7f3299a5dbe0>True
+2021-11-23 12:47:47,704:DEBUG:<frontend.Frontend object at 0x7f3299a5dc40>True
+2021-11-23 12:47:47,705:DEBUG:<frontend.Frontend object at 0x7f3299a60250>True
+2021-11-23 12:47:47,706:DEBUG:<frontend.Frontend object at 0x7f3299a602e0>True
+2021-11-23 12:47:47,706:DEBUG:<frontend.Frontend object at 0x7f3299a60340>True
+2021-11-23 12:47:47,707:DEBUG:<frontend.Frontend object at 0x7f3299a603a0>True
+2021-11-23 12:59:27,838:DEBUG:LED set to: device on
+2021-11-23 13:00:44,191:DEBUG:LED set to: device on
+2021-11-23 13:00:47,998:DEBUG:LED set to: device on
+2021-11-23 13:00:52,233:DEBUG:LED set to: device on
+2021-11-23 14:22:18,299:DEBUG:LED set to: device on
+2021-11-23 14:22:21,148:DEBUG:LED set to: device on
+2021-11-23 14:25:59,289:DEBUG:LED set to: device on
+2021-11-23 14:26:01,088:DEBUG:LED set to: device on
+2021-11-23 14:26:01,821:DEBUG:LED set to: device on
+2021-11-23 14:27:20,323:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:21,774:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:23,224:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:24,675:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:25,730:DEBUG:LED set to: device on
+2021-11-23 14:27:26,266:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:27,716:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:29,171:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:30,624:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:31,679:DEBUG:LED set to: device on
+2021-11-23 14:27:32,220:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:33,671:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:35,123:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:36,573:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:27:37,628:DEBUG:LED set to: device on
+2021-11-23 14:28:16,599:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:18,049:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:19,502:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:20,954:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:22,009:DEBUG:LED set to: device on
+2021-11-23 14:28:46,903:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:48,354:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:49,806:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:51,259:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:52,316:DEBUG:LED set to: device on
+2021-11-23 14:28:52,863:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:54,315:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:55,765:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:57,215:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:28:58,270:DEBUG:LED set to: device on
+2021-11-23 14:28:58,814:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:29:00,266:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:29:01,716:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:29:03,167:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:29:04,221:DEBUG:LED set to: device on
+2021-11-23 14:29:04,762:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:29:06,213:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:29:07,663:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:29:09,116:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:29:10,173:DEBUG:LED set to: device on
+2021-11-23 14:29:52,498:DEBUG:LED set to: device on
+2021-11-23 14:44:16,692:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:44:18,144:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:44:19,594:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:44:21,045:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:44:22,098:DEBUG:LED set to: device on
+2021-11-23 14:44:52,563:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:44:54,013:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:44:55,470:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:44:56,920:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:44:57,976:DEBUG:LED set to: device on
+2021-11-23 14:44:58,517:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:44:59,969:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:45:01,420:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:45:02,871:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:45:03,925:DEBUG:LED set to: device on
+2021-11-23 14:46:41,242:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:46:42,692:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:46:44,141:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:46:45,593:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:46:46,654:DEBUG:LED set to: device on
+2021-11-23 14:52:52,283:DEBUG:[[True, False, False, False], [True, False, False, False], [True, False, False, False], [True, False, False, False]]
+2021-11-23 14:52:53,736:DEBUG:[[True, True, False, False], [True, True, False, False], [True, True, False, False], [True, True, False, False]]
+2021-11-23 14:52:55,203:DEBUG:[[True, True, True, False], [True, True, True, False], [True, True, True, False], [True, True, True, False]]
+2021-11-23 14:52:56,654:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 14:52:57,708:DEBUG:LED set to: device on
+2021-11-23 14:56:16,339:DEBUG:[[True, False, False, False], [True, False, False, False], [True, False, False, False], [True, False, False, False]]
+2021-11-23 14:56:17,790:DEBUG:[[True, True, False, False], [True, True, False, False], [True, True, False, False], [True, True, False, False]]
+2021-11-23 14:56:19,239:DEBUG:[[False, True, False, True], [True, True, True, False], [True, True, True, False], [True, True, True, False]]
+2021-11-23 14:56:20,685:DEBUG:[[True, True, True, False], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 14:57:32,917:DEBUG:[[False, True, True, True], [False, True, True, True], [False, True, True, True], [False, True, True, True]]
+2021-11-23 14:57:34,371:DEBUG:[[False, False, True, True], [False, False, True, True], [False, False, True, True], [False, False, True, True]]
+2021-11-23 14:57:35,823:DEBUG:[[False, False, False, True], [False, False, False, True], [False, False, False, True], [False, False, False, True]]
+2021-11-23 14:57:37,275:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:57:49,314:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:57:50,769:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:57:52,221:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:57:53,673:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:59:03,037:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:59:04,491:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:59:05,940:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:59:07,389:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 14:59:08,447:DEBUG:LED set to: device on
+2021-11-23 15:01:20,371:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:01:21,823:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:01:23,274:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:01:24,724:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:01:25,781:DEBUG:LED set to: device on
+2021-11-23 15:02:13,600:DEBUG:[[True, False, False, False], [True, False, False, False], [True, False, False, False], [True, False, False, False]]
+2021-11-23 15:02:15,069:DEBUG:[[True, True, False, False], [True, True, False, False], [True, True, False, False], [True, True, False, False]]
+2021-11-23 15:02:16,518:DEBUG:[[True, True, True, False], [True, True, True, False], [True, True, True, False], [True, True, True, False]]
+2021-11-23 15:02:17,966:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:02:19,021:DEBUG:LED set to: device on
+2021-11-23 15:04:09,075:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:04:10,523:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:04:11,976:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:04:13,425:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:04:14,481:DEBUG:LED set to: device on
+2021-11-23 15:05:05,007:DEBUG:[[False, True, True, True], [False, True, True, True], [False, True, True, True], [False, True, True, True]]
+2021-11-23 15:05:06,457:DEBUG:[[False, False, True, True], [False, False, True, True], [False, False, True, True], [False, False, True, True]]
+2021-11-23 15:05:07,906:DEBUG:[[False, False, False, True], [False, False, False, True], [False, False, False, True], [False, False, False, True]]
+2021-11-23 15:05:09,356:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:05:10,411:DEBUG:LED set to: device on
+2021-11-23 15:08:55,820:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:08:57,270:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:08:58,720:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:09:00,169:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:09:01,224:DEBUG:LED set to: device on
+2021-11-23 15:16:40,198:DEBUG:[[True, False, False, False], [True, False, False, False], [True, False, False, False], [True, False, False, False]]
+2021-11-23 15:16:41,661:DEBUG:[[True, True, False, False], [True, True, False, False], [True, True, False, False], [True, True, False, False]]
+2021-11-23 15:16:43,110:DEBUG:[[True, True, True, False], [True, True, True, False], [True, True, True, False], [True, True, True, False]]
+2021-11-23 15:16:44,560:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:16:45,619:DEBUG:LED set to: device on
+2021-11-23 15:16:58,559:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:17:00,007:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:17:01,461:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:17:02,911:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:17:03,968:DEBUG:LED set to: device on
+2021-11-23 15:18:06,233:DEBUG:LED set to: device on
+2021-11-23 15:31:25,928:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:31:27,378:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:31:28,833:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:31:30,282:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:31:31,340:DEBUG:LED set to: device on
+2021-11-23 15:31:38,661:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:31:40,111:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:31:41,565:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:31:43,014:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:31:44,069:DEBUG:LED set to: device on
+2021-11-23 15:33:27,794:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:33:29,246:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:33:30,696:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:33:32,146:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:33:33,201:DEBUG:LED set to: device on
+2021-11-23 15:33:33,245:DEBUG:power is on
+2021-11-23 15:33:59,413:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:34:00,863:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:34:02,319:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:34:03,769:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:34:04,826:DEBUG:LED set to: device on
+2021-11-23 15:34:04,869:DEBUG:power is on
+2021-11-23 15:35:17,699:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:35:19,149:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:35:20,600:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:35:22,049:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:35:23,104:DEBUG:LED set to: device on
+2021-11-23 15:35:23,147:DEBUG:power is on
+2021-11-23 15:40:07,349:DEBUG:[[True, False, False, False], [True, False, False, False], [True, False, False, False], [True, False, False, False]]
+2021-11-23 15:40:08,799:DEBUG:[[True, True, False, False], [True, True, False, False], [True, True, False, False], [True, True, False, False]]
+2021-11-23 15:40:10,252:DEBUG:[[True, True, True, False], [True, True, True, False], [True, True, True, False], [True, True, True, False]]
+2021-11-23 15:40:11,701:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:40:12,755:DEBUG:LED set to: device on
+2021-11-23 15:40:12,799:DEBUG:power is on
+2021-11-23 15:40:19,028:DEBUG:[[False, True, True, True], [False, True, True, True], [False, True, True, True], [False, True, True, True]]
+2021-11-23 15:40:20,477:DEBUG:[[False, False, True, True], [False, False, True, True], [False, False, True, True], [False, False, True, True]]
+2021-11-23 15:40:21,928:DEBUG:[[False, False, False, True], [False, False, False, True], [False, False, False, True], [False, False, False, True]]
+2021-11-23 15:40:23,379:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:40:24,434:DEBUG:LED set to: device on
+2021-11-23 15:40:24,477:DEBUG:power is on
+2021-11-23 15:42:07,993:DEBUG:LED set to: device on
+2021-11-23 15:42:11,742:DEBUG:[[True, False, False, False], [True, False, False, False], [True, False, False, False], [True, False, False, False]]
+2021-11-23 15:42:13,191:DEBUG:[[True, True, False, False], [True, True, False, False], [True, True, False, False], [True, True, False, False]]
+2021-11-23 15:42:14,643:DEBUG:[[True, True, True, False], [True, True, True, False], [True, True, True, False], [True, True, True, False]]
+2021-11-23 15:42:16,092:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:42:17,147:DEBUG:LED set to: device on
+2021-11-23 15:42:17,189:DEBUG:power is on
+2021-11-23 15:42:26,960:DEBUG:[[False, True, True, True], [False, True, True, True], [False, True, True, True], [False, True, True, True]]
+2021-11-23 15:42:28,413:DEBUG:[[False, False, True, True], [False, False, True, True], [False, False, True, True], [False, False, True, True]]
+2021-11-23 15:42:29,865:DEBUG:[[False, False, False, True], [False, False, False, True], [False, False, False, True], [False, False, False, True]]
+2021-11-23 15:42:31,316:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:42:32,373:DEBUG:LED set to: device on
+2021-11-23 15:42:32,416:DEBUG:power is on
+2021-11-23 15:55:35,228:DEBUG:[[True, False, False, False], [True, False, False, False], [True, False, False, False], [True, False, False, False]]
+2021-11-23 15:55:36,681:DEBUG:[[True, True, False, False], [True, True, False, False], [True, True, False, False], [True, True, False, False]]
+2021-11-23 15:55:38,133:DEBUG:[[True, True, True, False], [True, True, True, False], [True, True, True, False], [True, True, True, False]]
+2021-11-23 15:55:39,589:DEBUG:[[True, True, True, True], [True, True, True, True], [True, True, True, True], [True, True, True, True]]
+2021-11-23 15:55:40,645:DEBUG:LED set to: device on
+2021-11-23 15:55:40,688:DEBUG:LED set to: device on
+2021-11-23 15:55:40,689:DEBUG:power is turned on
+2021-11-23 15:55:48,820:DEBUG:[[False, True, True, True], [False, True, True, True], [False, True, True, True], [False, True, True, True]]
+2021-11-23 15:55:50,277:DEBUG:[[False, False, True, True], [False, False, True, True], [False, False, True, True], [False, False, True, True]]
+2021-11-23 15:55:51,729:DEBUG:[[False, False, False, True], [False, False, False, True], [False, False, False, True], [False, False, False, True]]
+2021-11-23 15:55:53,182:DEBUG:[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2021-11-23 15:55:54,238:DEBUG:LED set to: device on
+2021-11-23 15:55:54,284:DEBUG:device off
+2021-11-23 15:55:54,286:DEBUG:power is tuned off

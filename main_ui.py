@@ -47,7 +47,9 @@ class main(qtw.QMainWindow,Ui_MainWindow):
 
         self.pushButton_ResetBackend.clicked.connect(self.get_status)
         self.pushButton_directory.clicked.connect(self.choose_directory)
-        self.pushButton_powerUp.clicked.connect(self.power_toggle_cb(True))
+        #self.pushButton_powerUp.clicked.connect(self.power_toggle_cb(True))
+
+        self.pushButton_powerUp.clicked.connect(self.power_on_off)
         self.pushButton_startAquisition.clicked.connect(self.startAcquire)
         
         # self.pushButton_bias.clicked.connect(self.bias_toggle_cb)
@@ -92,27 +94,29 @@ class main(qtw.QMainWindow,Ui_MainWindow):
     	if stateIn:
            logger.debug('LED set to: device on')
            self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_GREEN_LED))
-        #else:
-         #  logger.debug('device off')
-          # self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_RED_LED))
+        
+    	else:
+           logger.debug('LED set to: device off')
+           self.label_statusLed.setPixmap(QtGui.QPixmap(ICON_RED_LED))
 
 
     def get_status(self):
         sync_status = self.sys.sync.get_status()
-        #sync_status = self.sync.get_status()
-        self.set_led(sync_status)
+        
+        self.set_led(sync_status)#Need new LED for system status
 
         # Directly check the status of each backend
         be_status = self.sys.get_status()
         be_status = zip(self.backend, be_status)
-        [print(f'{s}{b}') for b,s in be_status]
-        [self.set_led(s) for b,s in be_status]
+                
+        for b,s in be_status:
+            logger.debug(f'{s}{b}')
         
         # Check the RX status for each port on each backend to infer the frontend state
-        sys_rx = self.sys.get_rx_status()
-        for be, be_rx in zip(self.backend, sys_rx):
-            for fe, err in zip(be.frontend, be_rx):
-                fe.status.config(bg = 'red' if err else 'green')
+        #sys_rx = self.sys.get_rx_status()
+        #for be, be_rx in zip(self.backend, sys_rx):
+         #   for fe, err in zip(be.frontend, be_rx):
+          #      fe.status.config(bg = 'red' if err else 'green')
 
     def enumerate(self):
         sys_idx = self.sys.get_physical_idx()
@@ -146,11 +150,25 @@ class main(qtw.QMainWindow,Ui_MainWindow):
             new_pwr = self.sys.set_power(pwr)
             [be.flush() for be in self.sys.backend]
 
-            self.set_pwr_vars(new_pwr)
+            logger.debug(new_pwr)
             time.sleep(1)
 
         self.get_power()
         self.get_status()
+
+    def power_on_off(self):
+        pwr = self.get_power()
+        # the power was on condition
+        if pwr[1][1]:
+           self.power_toggle_cb(False) #<--- turn power off
+           self.set_led(False)
+           logger.debug('power is tuned off')
+        
+        # the power was off condition
+        else:
+           self.power_toggle_cb(True) #<--- turn power on
+           self.set_led(True)
+       	   logger.debug('power is turned on')
 
     def bias_toggle_cb(self, turn_on = False):
         if turn_on:
